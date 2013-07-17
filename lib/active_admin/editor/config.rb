@@ -29,6 +29,9 @@ module ActiveAdmin
       # wysiwyg stylesheets that get included in the backend and the frontend.
       attr_accessor :stylesheets
 
+      # By default wysihtml5 will insert a <br> for line breaks, set this to false to use <p>
+      attr_accessor :use_line_breaks
+
       def storage_dir
         @storage_dir ||= 'uploads'
       end
